@@ -1,0 +1,14 @@
+{
+  "name": "mapeador-rede",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pkg": "^5.8.1"
+  },
+  "scripts": {
+    "buildAndExecute": "pkg --target win index.js --out-path ./output && cd ./output && ./index.exe",
+    "start": "cd ./output && ./index.exe",
+    "build": "pkg --target win ./index.js --out-path ./output"
+  }
+}
